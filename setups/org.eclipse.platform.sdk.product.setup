@@ -68,7 +68,7 @@
           name="org.eclipse.sdk.ide"
           versionRange="[4.21.0,5.0.0)"/>
       <repository
-          url="http://download.eclipse.org/eclipse/updates/4.21-I-builds"/>
+          url="https://download.eclipse.org/eclipse/updates/4.21"/>
     </setupTask>
   </version>
   <version name="latest.released"
@@ -116,7 +116,7 @@
           name="org.eclipse.sdk.ide"
           versionRange="[4.21.0,5.0.0)"/>
       <repository
-          url="http://download.eclipse.org/eclipse/updates/4.21-I-builds"/>
+          url="https://download.eclipse.org/eclipse/updates/4.21"/>
     </setupTask>
   </version>
   <version name="4.20"

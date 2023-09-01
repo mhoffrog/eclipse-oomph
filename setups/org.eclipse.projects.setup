@@ -451,8 +451,8 @@
     <setupTask
         xsi:type="setup:VariableTask"
         name="eclipse.latest.p2"
-        value="http://download.eclipse.org/eclipse/updates/4.21-I-builds"
-        label="Eclipse Latest I-Build p2 Repository - 4.21">
+        value="https://download.eclipse.org/eclipse/updates/4.21"
+        label="Eclipse p2 Repository - 4.21">
       <description>The update site of the latest Eclipse project's builds, typically an I-Build for the next release</description>
     </setupTask>
     <setupTask
@@ -722,7 +722,7 @@
       <repositoryList
           name="2021-09">
         <repository
-            url="http://download.eclipse.org/eclipse/updates/4.21-I-builds"/>
+            url="https://download.eclipse.org/eclipse/updates/4.21"/>
       </repositoryList>
       <repositoryList
           name="2021-06">

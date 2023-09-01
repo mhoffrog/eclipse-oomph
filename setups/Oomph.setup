@@ -76,11 +76,11 @@
         name="org.eclipse.pde.api.tools.ee.feature.feature.group"
         optional="true"/>
     <repository
-        url="http://download.eclipse.org/modeling/emf/emf/builds/nightly/latest"/>
+        url="https://download.eclipse.org/modeling/emf/emf/builds/release/2.27"/>
     <repository
-        url="http://download.eclipse.org/egit/updates-stable-nightly"/>
+        url="https://archive.eclipse.org/egit/updates-5.12"/>
     <repository
-        url="http://download.eclipse.org/technology/swtbot/snapshots"/>
+        url="https://download.eclipse.org/technology/swtbot/releases/3.1.0"/>
     <repository
         url="${oomph.update.url}"/>
   </setupTask>
@@ -491,15 +491,15 @@
         <repositoryList
             name="2021-09">
           <repository
-              url="http://download.eclipse.org/usssdk/updates/latest"/>
+              url="https://download.eclipse.org/usssdk/updates/release"/>
           <repository
-              url="http://download.eclipse.org/egit/updates"/>
+              url="https://archive.eclipse.org/egit/updates-5.12"/>
           <repository
-              url="http://download.eclipse.org/tools/orbit/downloads/latest-R"/>
+              url="https://download.eclipse.org/tools/orbit/downloads/drops/R20210825222808/repository"/>
           <repository
-              url="http://download.eclipse.org/modeling/emf/emf/builds/milestone/latest"/>
+              url="https://download.eclipse.org/modeling/emf/emf/builds/release/2.27"/>
           <repository
-              url="http://download.eclipse.org/mylyn/snapshots/weekly"/>
+              url="https://download.eclipse.org/mylyn/releases/3.25"/>
           <repository
               url="http://download.eclipse.org/tools/orbit/downloads/drops2/R20190602212107/repository">
             <annotation>
@@ -510,28 +510,28 @@
             </annotation>
           </repository>
           <repository
-              url="http://download.eclipse.org/technology/m2e/snapshots/latest"/>
+              url="https://archive.eclipse.org/technology/m2e/releases/1.18.2"/>
           <repository
-              url="http://download.eclipse.org/nebula/snapshot"/>
+              url="https://archive.eclipse.org/nebula/releases/2.5.0"/>
           <repository
-              url="http://download.eclipse.org/technology/swtbot/snapshots"/>
+              url="https://download.eclipse.org/technology/swtbot/releases/3.1.0"/>
           <repository
-              url="http://download.eclipse.org/webtools/repository/latest"/>
+              url="https://download.eclipse.org/webtools/downloads/drops/R3.23.0/R-3.23.0-20210822084517/repository"/>
           <repository
               url="http://download.eclipse.org/justj/jres/16/updates/release/16.0.2"/>
         </repositoryList>
         <repositoryList
             name="2021-06">
           <repository
-              url="http://download.eclipse.org/usssdk/updates/latest"/>
+              url="https://download.eclipse.org/usssdk/updates/release"/>
           <repository
-              url="http://download.eclipse.org/egit/updates"/>
+              url="https://archive.eclipse.org/egit/updates-5.12"/>
           <repository
-              url="http://download.eclipse.org/tools/orbit/downloads/latest-R"/>
+              url="https://download.eclipse.org/tools/orbit/downloads/drops/R20210825222808/repository"/>
           <repository
-              url="http://download.eclipse.org/modeling/emf/emf/builds/milestone/latest"/>
+              url="https://download.eclipse.org/modeling/emf/emf/builds/release/2.27"/>
           <repository
-              url="http://download.eclipse.org/mylyn/snapshots/weekly"/>
+              url="https://download.eclipse.org/mylyn/releases/3.25"/>
           <repository
               url="http://download.eclipse.org/tools/orbit/downloads/drops2/R20190602212107/repository">
             <annotation>
@@ -542,28 +542,28 @@
             </annotation>
           </repository>
           <repository
-              url="http://download.eclipse.org/technology/m2e/snapshots"/>
+              url="https://archive.eclipse.org/technology/m2e/releases/1.18.2"/>
           <repository
-              url="http://download.eclipse.org/nebula/snapshot"/>
+              url="https://archive.eclipse.org/nebula/releases/2.5.0"/>
           <repository
-              url="http://download.eclipse.org/technology/swtbot/snapshots"/>
+              url="https://download.eclipse.org/technology/swtbot/releases/3.1.0"/>
           <repository
-              url="http://download.eclipse.org/webtools/repository/latest"/>
+              url="https://download.eclipse.org/webtools/downloads/drops/R3.23.0/R-3.23.0-20210822084517/repository"/>
           <repository
               url="http://download.eclipse.org/justj/jres/16/updates/release/16.0.1"/>
         </repositoryList>
         <repositoryList
             name="2021-03">
           <repository
-              url="http://download.eclipse.org/usssdk/updates/latest"/>
+              url="https://download.eclipse.org/usssdk/updates/release"/>
           <repository
-              url="http://download.eclipse.org/egit/updates"/>
+              url="https://archive.eclipse.org/egit/updates-5.12"/>
           <repository
-              url="http://download.eclipse.org/tools/orbit/downloads/latest-R"/>
+              url="https://download.eclipse.org/tools/orbit/downloads/drops/R20210825222808/repository"/>
           <repository
-              url="http://download.eclipse.org/modeling/emf/emf/builds/milestone/latest"/>
+              url="https://download.eclipse.org/modeling/emf/emf/builds/release/2.27"/>
           <repository
-              url="http://download.eclipse.org/mylyn/snapshots/weekly"/>
+              url="https://download.eclipse.org/mylyn/releases/3.25"/>
           <repository
               url="http://download.eclipse.org/tools/orbit/downloads/drops2/R20190602212107/repository">
             <annotation>
@@ -574,28 +574,28 @@
             </annotation>
           </repository>
           <repository
-              url="http://download.eclipse.org/technology/m2e/snapshots"/>
+              url="https://archive.eclipse.org/technology/m2e/releases/1.18.2"/>
           <repository
-              url="http://download.eclipse.org/nebula/snapshot"/>
+              url="https://archive.eclipse.org/nebula/releases/2.5.0"/>
           <repository
-              url="http://download.eclipse.org/technology/swtbot/snapshots"/>
+              url="https://download.eclipse.org/technology/swtbot/releases/3.1.0"/>
           <repository
-              url="http://download.eclipse.org/webtools/repository/latest"/>
+              url="https://download.eclipse.org/webtools/downloads/drops/R3.23.0/R-3.23.0-20210822084517/repository"/>
           <repository
               url="http://download.eclipse.org/justj/jres/15/updates/release/15.0.2"/>
         </repositoryList>
         <repositoryList
             name="2020-12">
           <repository
-              url="http://download.eclipse.org/usssdk/updates/latest"/>
+              url="https://download.eclipse.org/usssdk/updates/release"/>
           <repository
-              url="http://download.eclipse.org/egit/updates"/>
+              url="https://archive.eclipse.org/egit/updates-5.12"/>
           <repository
-              url="http://download.eclipse.org/tools/orbit/downloads/latest-R"/>
+              url="https://download.eclipse.org/tools/orbit/downloads/drops/R20210825222808/repository"/>
           <repository
-              url="http://download.eclipse.org/modeling/emf/emf/builds/milestone/latest"/>
+              url="https://download.eclipse.org/modeling/emf/emf/builds/release/2.27"/>
           <repository
-              url="http://download.eclipse.org/mylyn/snapshots/weekly"/>
+              url="https://download.eclipse.org/mylyn/releases/3.25"/>
           <repository
               url="http://download.eclipse.org/tools/orbit/downloads/drops2/R20190602212107/repository">
             <annotation>
@@ -606,28 +606,28 @@
             </annotation>
           </repository>
           <repository
-              url="http://download.eclipse.org/technology/m2e/snapshots"/>
+              url="https://archive.eclipse.org/technology/m2e/releases/1.18.2"/>
           <repository
-              url="http://download.eclipse.org/nebula/snapshot"/>
+              url="https://archive.eclipse.org/nebula/releases/2.5.0"/>
           <repository
-              url="http://download.eclipse.org/technology/swtbot/snapshots"/>
+              url="https://download.eclipse.org/technology/swtbot/releases/3.1.0"/>
           <repository
-              url="http://download.eclipse.org/webtools/repository/latest"/>
+              url="https://download.eclipse.org/webtools/downloads/drops/R3.23.0/R-3.23.0-20210822084517/repository"/>
           <repository
               url="http://download.eclipse.org/justj/jres/15/updates/release/15.0.1"/>
         </repositoryList>
         <repositoryList
             name="2020-09">
           <repository
-              url="http://download.eclipse.org/usssdk/updates/latest"/>
+              url="https://download.eclipse.org/usssdk/updates/release"/>
           <repository
-              url="http://download.eclipse.org/egit/updates"/>
+              url="https://archive.eclipse.org/egit/updates-5.12"/>
           <repository
-              url="http://download.eclipse.org/tools/orbit/downloads/latest-R"/>
+              url="https://download.eclipse.org/tools/orbit/downloads/drops/R20210825222808/repository"/>
           <repository
-              url="http://download.eclipse.org/modeling/emf/emf/builds/milestone/latest"/>
+              url="https://download.eclipse.org/modeling/emf/emf/builds/release/2.27"/>
           <repository
-              url="http://download.eclipse.org/mylyn/snapshots/weekly"/>
+              url="https://download.eclipse.org/mylyn/releases/3.25"/>
           <repository
               url="http://download.eclipse.org/tools/orbit/downloads/drops2/R20190602212107/repository">
             <annotation>
@@ -638,26 +638,26 @@
             </annotation>
           </repository>
           <repository
-              url="http://download.eclipse.org/technology/m2e/snapshots"/>
+              url="https://archive.eclipse.org/technology/m2e/releases/1.18.2"/>
           <repository
-              url="http://download.eclipse.org/nebula/snapshot"/>
+              url="https://archive.eclipse.org/nebula/releases/2.5.0"/>
           <repository
-              url="http://download.eclipse.org/technology/swtbot/snapshots"/>
+              url="https://download.eclipse.org/technology/swtbot/releases/3.1.0"/>
           <repository
-              url="http://download.eclipse.org/webtools/repository/latest"/>
+              url="https://download.eclipse.org/webtools/downloads/drops/R3.23.0/R-3.23.0-20210822084517/repository"/>
         </repositoryList>
         <repositoryList
             name="2020-06">
           <repository
-              url="http://download.eclipse.org/usssdk/updates/latest"/>
+              url="https://download.eclipse.org/usssdk/updates/release"/>
           <repository
-              url="http://download.eclipse.org/egit/updates"/>
+              url="https://archive.eclipse.org/egit/updates-5.12"/>
           <repository
-              url="http://download.eclipse.org/tools/orbit/downloads/latest-R"/>
+              url="https://download.eclipse.org/tools/orbit/downloads/drops/R20210825222808/repository"/>
           <repository
-              url="http://download.eclipse.org/modeling/emf/emf/builds/milestone/latest"/>
+              url="https://download.eclipse.org/modeling/emf/emf/builds/release/2.27"/>
           <repository
-              url="http://download.eclipse.org/mylyn/snapshots/weekly"/>
+              url="https://download.eclipse.org/mylyn/releases/3.25"/>
           <repository
               url="http://download.eclipse.org/tools/orbit/downloads/drops2/R20190602212107/repository">
             <annotation>
@@ -668,26 +668,26 @@
             </annotation>
           </repository>
           <repository
-              url="http://download.eclipse.org/technology/m2e/snapshots"/>
+              url="https://archive.eclipse.org/technology/m2e/releases/1.18.2"/>
           <repository
-              url="http://download.eclipse.org/nebula/snapshot"/>
+              url="https://archive.eclipse.org/nebula/releases/2.5.0"/>
           <repository
-              url="http://download.eclipse.org/technology/swtbot/snapshots"/>
+              url="https://download.eclipse.org/technology/swtbot/releases/3.1.0"/>
           <repository
-              url="http://download.eclipse.org/webtools/repository/latest"/>
+              url="https://download.eclipse.org/webtools/downloads/drops/R3.23.0/R-3.23.0-20210822084517/repository"/>
         </repositoryList>
         <repositoryList
             name="2020-03">
           <repository
-              url="http://download.eclipse.org/usssdk/updates/latest"/>
+              url="https://download.eclipse.org/usssdk/updates/release"/>
           <repository
-              url="http://download.eclipse.org/egit/updates"/>
+              url="https://archive.eclipse.org/egit/updates-5.12"/>
           <repository
-              url="http://download.eclipse.org/tools/orbit/downloads/latest-R"/>
+              url="https://download.eclipse.org/tools/orbit/downloads/drops/R20210825222808/repository"/>
           <repository
-              url="http://download.eclipse.org/modeling/emf/emf/builds/milestone/latest"/>
+              url="https://download.eclipse.org/modeling/emf/emf/builds/release/2.27"/>
           <repository
-              url="http://download.eclipse.org/mylyn/snapshots/weekly"/>
+              url="https://download.eclipse.org/mylyn/releases/3.25"/>
           <repository
               url="http://download.eclipse.org/tools/orbit/downloads/drops2/R20190602212107/repository">
             <annotation>
@@ -698,26 +698,26 @@
             </annotation>
           </repository>
           <repository
-              url="http://download.eclipse.org/technology/m2e/snapshots"/>
+              url="https://archive.eclipse.org/technology/m2e/releases/1.18.2"/>
           <repository
-              url="http://download.eclipse.org/nebula/snapshot"/>
+              url="https://archive.eclipse.org/nebula/releases/2.5.0"/>
           <repository
-              url="http://download.eclipse.org/technology/swtbot/snapshots"/>
+              url="https://download.eclipse.org/technology/swtbot/releases/3.1.0"/>
           <repository
-              url="http://download.eclipse.org/webtools/repository/latest"/>
+              url="https://download.eclipse.org/webtools/downloads/drops/R3.23.0/R-3.23.0-20210822084517/repository"/>
         </repositoryList>
         <repositoryList
             name="2019-12">
           <repository
-              url="http://download.eclipse.org/usssdk/updates/latest"/>
+              url="https://download.eclipse.org/usssdk/updates/release"/>
           <repository
-              url="http://download.eclipse.org/egit/updates"/>
+              url="https://archive.eclipse.org/egit/updates-5.12"/>
           <repository
-              url="http://download.eclipse.org/tools/orbit/downloads/latest-R"/>
+              url="https://download.eclipse.org/tools/orbit/downloads/drops/R20210825222808/repository"/>
           <repository
-              url="http://download.eclipse.org/modeling/emf/emf/builds/milestone/latest"/>
+              url="https://download.eclipse.org/modeling/emf/emf/builds/release/2.27"/>
           <repository
-              url="http://download.eclipse.org/mylyn/snapshots/weekly"/>
+              url="https://download.eclipse.org/mylyn/releases/3.25"/>
           <repository
               url="http://download.eclipse.org/tools/orbit/downloads/drops2/R20190602212107/repository">
             <annotation>
@@ -728,13 +728,13 @@
             </annotation>
           </repository>
           <repository
-              url="http://download.eclipse.org/technology/m2e/snapshots"/>
+              url="https://archive.eclipse.org/technology/m2e/releases/1.18.2"/>
           <repository
-              url="http://download.eclipse.org/nebula/snapshot"/>
+              url="https://archive.eclipse.org/nebula/releases/2.5.0"/>
           <repository
-              url="http://download.eclipse.org/technology/swtbot/snapshots"/>
+              url="https://download.eclipse.org/technology/swtbot/releases/3.1.0"/>
           <repository
-              url="http://download.eclipse.org/webtools/repository/latest"/>
+              url="https://download.eclipse.org/webtools/downloads/drops/R3.23.0/R-3.23.0-20210822084517/repository"/>
         </repositoryList>
         <repositoryList
             name="2019-09">

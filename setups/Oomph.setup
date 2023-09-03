@@ -381,8 +381,8 @@
       value="${maven.bash.home}">
     <description>The location of the mvn command that will execute mvn on your operating system; it is used in the External Tools Configurations.</description>
   </setupTask>
-  <stream name="master"
-      label="Master">
+  <stream name="evaluation"
+      label="Evaluation_1_22_0">
     <setupTask
         xsi:type="jdt:JRETask"
         version="JavaSE-11"
@@ -390,8 +390,8 @@
     <setupTask
         xsi:type="git:GitCloneTask"
         id="git.clone.oomph"
-        remoteURI="oomph/org.eclipse.oomph"
-        checkoutBranch="master">
+        remoteURI="mhoffrog/eclipse-oomph"
+        checkoutBranch="evaluation/1_22_0">
       <annotation
           source="http://www.eclipse.org/oomph/setup/InducedChoices">
         <detail

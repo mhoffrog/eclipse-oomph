@@ -27,7 +27,7 @@
         name="eclipse.target.platform"
         value="${eclipse.target.platform.latest}"/>
     <stream
-        href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='oomph']/@streams[name='master']"/>
+        href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='oomph']/@streams[name='evaluation']"/>
     <description>The Oomph Development Environment workspace contains all features and plugins from the Oomph Git repository.</description>
   </workspace>
   <description>

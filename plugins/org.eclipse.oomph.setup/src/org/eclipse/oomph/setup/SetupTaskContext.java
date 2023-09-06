@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.resource.URIConverter;
 import org.eclipse.core.runtime.IProgressMonitor;
 
 import java.io.File;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -80,4 +81,8 @@ public interface SetupTaskContext extends ProgressLog
   public String getLauncherName();
 
   public boolean matchesFilterContext(String filter);
+
+  // @patch mhoffrog
+  public Map<String, String> getFilterProperties();
+
 }

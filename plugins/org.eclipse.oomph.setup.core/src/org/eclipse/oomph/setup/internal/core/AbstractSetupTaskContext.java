@@ -513,4 +513,10 @@ public abstract class AbstractSetupTaskContext extends StringExpander implements
   {
     return StringFilterRegistry.INSTANCE.filter(value, filterName);
   }
+
+  public Map<String, String> getFilterProperties()
+  {
+    return filterContextIU.getProperties();
+  }
+
 }

@@ -2203,31 +2203,55 @@ public class SetupTaskPerformer extends AbstractSetupTaskContext
   private static Set<String> getFilterProperties(SetupTask setupTask)
   {
     final Set<String> filterProperties = new LinkedHashSet<String>();
-    LDAPFilter ldapFilter = getLDAPFilter(setupTask);
-    if (ldapFilter != null)
+    // @patch mhoffrog {
+    final List<String> filters = new ArrayList<String>();
+    filters.add(setupTask.getFilter());
+    if (setupTask instanceof P2Task)
     {
-      ldapFilter.accept(new IExpressionVisitor()
+      for (final Requirement req : ((P2Task)setupTask).getRequirements())
       {
-        public boolean visit(IExpression expression)
+        String filter = req.getFilter();
+        if (!StringUtil.isEmpty(filter))
         {
-          if (expression.getExpressionType() == IExpression.TYPE_MEMBER)
-          {
-            Member member = (Member)expression;
-            String name = member.getName();
-            filterProperties.add(name);
-          }
-
-          return true;
+          filters.add(filter);
         }
-      });
+      }
     }
+    // @patch mhoffrog }
+    // @patch mhoffrog {
+    for (final String filter : filters)
+    {
+      // @patch mhoffrog
+      // LDAPFilter ldapFilter = getLDAPFilter(setupTask.getFilter());
+      LDAPFilter ldapFilter = getLDAPFilter(filter);
+      if (ldapFilter != null)
+      {
+        ldapFilter.accept(new IExpressionVisitor()
+        {
+          public boolean visit(IExpression expression)
+          {
+            if (expression.getExpressionType() == IExpression.TYPE_MEMBER)
+            {
+              Member member = (Member)expression;
+              String name = member.getName();
+              filterProperties.add(name);
+            }
+
+            return true;
+          }
+        });
+      }
+    } // @patch mhoffrog }
 
     return filterProperties;
   }
 
-  private static LDAPFilter getLDAPFilter(SetupTask setupTask)
+  // @patch mhoffrog
+  // private static LDAPFilter getLDAPFilter(SetupTask setupTask)
+  private static LDAPFilter getLDAPFilter(String filter)
   {
-    String filter = setupTask.getFilter();
+    // @patch mhoffrog
+    // String filter = setupTask.getFilter();
     if (!StringUtil.isEmpty(filter))
     {
       try

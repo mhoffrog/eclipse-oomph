@@ -1013,6 +1013,14 @@ public class P2TaskImpl extends SetupTaskImpl implements P2Task
         profileCreator.set(Profile.PROP_PROFILE_SHARED_POOL, sharedPool);
 
         profile = profileCreator.create();
+
+        // @patch mhoffrog
+        Map<String, String> filterProperties = context.getFilterProperties();
+        for (String key : filterProperties.keySet())
+        {
+          profile.getProperties().putIfAbsent(key, filterProperties.get(key));
+        }
+
       }
 
       UIServices uiServices = (UIServices)context.get(UIServices.class);

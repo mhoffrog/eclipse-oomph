@@ -1014,13 +1014,6 @@ public class P2TaskImpl extends SetupTaskImpl implements P2Task
 
         profile = profileCreator.create();
 
-        // @patch mhoffrog
-        Map<String, String> filterProperties = context.getFilterProperties();
-        for (String key : filterProperties.keySet())
-        {
-          profile.getProperties().putIfAbsent(key, filterProperties.get(key));
-        }
-
       }
 
       UIServices uiServices = (UIServices)context.get(UIServices.class);
@@ -1030,12 +1023,20 @@ public class P2TaskImpl extends SetupTaskImpl implements P2Task
         provisioningAgent.registerService(UIServices.SERVICE_NAME, uiServices);
       }
 
-      return profile;
+      // @patch mhoffrog
+      // return profile;
     }
     else
     {
       Agent agent = P2Util.getAgentManager().getCurrentAgent();
       profile = agent.getCurrentProfile();
+    }
+
+    // @patch mhoffrog
+    Map<String, String> filterProperties = context.getFilterProperties();
+    for (String key : filterProperties.keySet())
+    {
+      profile.getProperties().putIfAbsent(key, filterProperties.get(key));
     }
 
     return profile;

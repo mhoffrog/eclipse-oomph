@@ -44,8 +44,10 @@
   <setupTask
       xsi:type="setup.p2:P2Task"
       label="Groovy 2.5"
-      licenseConfirmationDisabled="true"
-      profileProperties="groovy.compiler.version=${groovy.compiler.version},myOtherProperty=xyz">
+      licenseConfirmationDisabled="true">
+      <!--
+        profileProperties="groovy.compiler.version=${groovy.compiler.version},myOtherProperty=xyz">
+      -->
     <requirement
         name="org.codehaus.groovy.eclipse.feature.feature.group"
         filter="(|(groovy.compiler.version=2*)(groovy.compiler.version=3*))"/>

@@ -190,6 +190,9 @@ public class SetupTaskPerformer extends AbstractSetupTaskContext
 
   private static final Map<String, ValueConverter> CONVERTERS = new LinkedHashMap<String, ValueConverter>();
 
+  // @patch mhoffrog
+  private static final Map<String, String> FILTER_VARIABLE_PROPERTIES = new LinkedHashMap<String, String>();
+
   static
   {
     CONVERTERS.put("java.lang.String", new ValueConverter()); //$NON-NLS-1$
@@ -863,6 +866,11 @@ public class SetupTaskPerformer extends AbstractSetupTaskContext
         }
       }
 
+      // @patch mhoffrog
+      if (phase == Phase.FILTER_PHASE)
+      {
+        FILTER_VARIABLE_PROPERTIES.clear();
+      }
       boolean hasFilterProperty = false;
       for (Iterator<SetupTask> it = triggeredSetupTasks.iterator(); it.hasNext();)
       {
@@ -879,6 +887,7 @@ public class SetupTaskPerformer extends AbstractSetupTaskContext
               if (!StringUtil.isEmpty(value))
               {
                 putFilterProperty(variable.getName(), value);
+                FILTER_VARIABLE_PROPERTIES.put(variable.getName(), value);
               }
 
               hasFilterProperty = true;
@@ -2601,6 +2610,13 @@ public class SetupTaskPerformer extends AbstractSetupTaskContext
   {
     return undeclaredVariables;
   }
+
+  // @patch mhoffrog {
+  public Map<String, String> getFilterVariableProperties()
+  {
+    return Collections.unmodifiableMap(FILTER_VARIABLE_PROPERTIES);
+  }
+  // @patch mhoffrog }
 
   public void redirectTriggeredSetupTasks()
   {

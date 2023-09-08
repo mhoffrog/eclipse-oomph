@@ -83,6 +83,6 @@ public interface SetupTaskContext extends ProgressLog
   public boolean matchesFilterContext(String filter);
 
   // @patch mhoffrog
-  public Map<String, String> getFilterProperties();
+  public Map<String, String> getFilterVariableProperties();
 
 }

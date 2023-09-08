@@ -773,6 +773,18 @@ public class P2TaskImpl extends SetupTaskImpl implements P2Task
     Profile profile = getProfile(context);
     ProfileTransaction transaction = profile.change();
 
+    // @patch mhoffrog {
+    final Map<String, String> filterVariableProperties = context.getFilterVariableProperties();
+    for (String key : filterVariableProperties.keySet())
+    {
+      String value = filterVariableProperties.get(key);
+      if (transaction.getProfileProperty(key) == null)
+      {
+        transaction.setProfileProperty(key, value);
+      }
+    }
+    // @patch mhoffrog }
+
     ProfileDefinition profileDefinition = transaction.getProfileDefinition();
     profileDefinition.setRequirements(requirements);
     profileDefinition.setRepositories(repositories);
@@ -1023,20 +1035,12 @@ public class P2TaskImpl extends SetupTaskImpl implements P2Task
         provisioningAgent.registerService(UIServices.SERVICE_NAME, uiServices);
       }
 
-      // @patch mhoffrog
-      // return profile;
+      return profile;
     }
     else
     {
       Agent agent = P2Util.getAgentManager().getCurrentAgent();
       profile = agent.getCurrentProfile();
-    }
-
-    // @patch mhoffrog
-    Map<String, String> filterProperties = context.getFilterProperties();
-    for (String key : filterProperties.keySet())
-    {
-      profile.getProperties().putIfAbsent(key, filterProperties.get(key));
     }
 
     return profile;

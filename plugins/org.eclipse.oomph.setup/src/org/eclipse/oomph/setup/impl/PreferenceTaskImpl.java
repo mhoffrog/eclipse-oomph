@@ -612,9 +612,9 @@ public class PreferenceTaskImpl extends SetupTaskImpl implements PreferenceTask
       }
 
       // @patch mhoffrog
-      public Map<String, String> getFilterProperties()
+      public Map<String, String> getFilterVariableProperties()
       {
-        return Collections.emptySortedMap();
+        return Collections.emptyMap();
       }
     };
 
